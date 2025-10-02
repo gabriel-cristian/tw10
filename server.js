@@ -1,13 +1,20 @@
-// 1. importam modulul http
-const http = require("http");
+// 1. importam modulul 
+const express = require("express");
 
 //2. cream serverul
-const server = http.createServer((req,res)=>{
-    res.statusCode = 200;
-    res.write("Salutare Node...")
-    res.end();
+const app = express();
+
+app.use(express.static("./src/public"))
+
+app.get("/",(req,res)=>{
+    res.send("Hello from Express ...")
 })
 
+app.get("/server/ping",(req,res)=>{
+    res.send("SALUTARE ...")
+})
+
+// http://localhost:8000/server/ping -> SALUTARE
 
 //3. port
-server.listen(3000);
+app.listen(8000, ()=>console.log("Server is running on port 8000"));
