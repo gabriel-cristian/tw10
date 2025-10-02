@@ -1,0 +1,19 @@
+{
+  "name": "tw2",
+  "version": "1.0.0",
+  "description": "ery54ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-cristian/tw10.git"
+  },
+  "author": "Gabriel Criastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel-cristian/tw10/issues"
+  },
+  "homepage": "https://github.com/gabriel-cristian/tw10#readme"
+}
